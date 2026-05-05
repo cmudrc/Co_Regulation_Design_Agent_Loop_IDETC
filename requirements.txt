@@ -1,0 +1,22 @@
+# ── Core data / analysis ──────────────────────────────────────────────────────
+numpy==1.26.4
+pandas==2.3.1
+openpyxl==3.1.5          # Excel I/O for pandas
+
+# ── Visualisation ─────────────────────────────────────────────────────────────
+plotly==6.2.0
+
+# ── Battery simulation ────────────────────────────────────────────────────────
+pybamm==25.12.2
+
+# ── LLM APIs ──────────────────────────────────────────────────────────────────
+google-genai==1.64.0      # Google Gemini (requires >=1.51.0 for thinking_level)
+openai==2.20.0            # OpenAI GPT models
+python-dotenv==1.2.1      # Load API keys from .env
+
+# ── Local model inference (HuggingFace) ───────────────────────────────────────
+torch==2.7.1+cu128        # PyTorch with CUDA 12.8
+transformers==5.1.0       # HuggingFace model loading
+accelerate==1.12.0        # Multi-GPU / device_map="auto" support
+bitsandbytes==0.49.1      # 4-bit / 8-bit quantization (BitsAndBytesConfig)
+huggingface_hub==1.4.1    # Model downloads (snapshot_download)
